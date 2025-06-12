@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tactiresearch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  </head>
+  <body class="min-h-screen text-white font-sans overflow-x-hidden relative">
+
+    <!-- Partículas -->
+    <div id="tsparticles" class="absolute inset-0 -z-10"></div>
+
+    <!-- Navbar -->
+    <header id="navbar" class="w-full fixed top-0 left-0 z-50 px-8 py-4 flex justify-between items-center backdrop-blur-sm bg-white/5 transition-all duration-300">
+      <div class="text-2xl font-bold">Tactiresearch</div>
+      <nav class="hidden md:flex space-x-8 text-sm">
+        <a href="#" class="hover:underline">Inicio</a>
+        <a href="#" class="hover:underline">Nosotros</a>
+        <a href="#" class="hover:underline">Clientes</a>
+        <a href="#" class="hover:underline">Contáctanos</a>
+        <a href="#visionarios" class="hover:underline">Visión</a>
+
+        <div class="relative group">
+          <button class="hover:underline">Más ↓</button>
+        </div>
+        <a href="#" class="ml-4 bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200">CONTACTANOS</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="min-h-screen pt-32 px-8 md:px-16 flex flex-col md:flex-row items-center justify-between bg-transparent">
+      <!-- Text -->
+     <div class="max-w-xl -mt-10">
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+          Hacemos <span class="text-gray-200">que</span><br />
+          <em class="italic text-white">las cosas</em> <span class="text-gray-200">sucedan.</span>
+        </h1>
+        <p class="text-lg mt-6 text-gray-100">
+          Nuestra prioridad es crear lazos con nuestros clientes <br />
+          e ir evolucionando para ellos y con ellos hombro a hombro.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4 text-sm font-semibold">
+          <a href="#" class="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200">CONTACTANOS</a>
+          <a href="#" class="text-white underline underline-offset-4">Más</a>
+        </div>
+      </div>
+
+      <!-- Imagen principal -->
+      <div class="mt-16 md:mt-0 md:ml-16 max-w-2xl">
+  <img src="img/background.png" alt="Hero 3D" class="w-full object-contain" />
+</div>
+
+    </section>
+
+    <!-- Logos de marcas -->
+    <section class="py-16 px-8 bg-transparent">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        <!-- Texto a la izquierda -->
+        <div class="md:w-1/3 text-left">
+          <h2 class="text-xl font-semibold text-white mb-2">Con la confianza de las principales marcas:</h2>
+          <p class="text-white/80 text-sm">Ellos ya trabajan con nosotros, ¿y tú?</p>
+        </div>
+
+        <!-- Carrusel de logos -->
+        <div class="md:w-2/3 overflow-hidden relative">
+          <div class="flex animate-slide gap-12 whitespace-nowrap">
+            <!-- Logos duplicados para loop continuo -->
+            <img src="img/oxxo.png" class="h-6 inline-block" />
+            <img src="img/alcon.jpg" class="h-6 inline-block" />
+            <img src="img/crest.png" class="h-6 inline-block" />
+            <img src="img/porcelanite.jpg" class="h-6 inline-block" />
+            <img src="img/devlyn.jpg" class="h-6 inline-block" />
+            <!-- Duplicado -->
+            <img src="https://via.placeholder.com/100x30?text=Logo1" class="h-6 inline-block" />
+            <img src="https://via.placeholder.com/100x30?text=Logo2" class="h-6 inline-block" />
+            <img src="https://via.placeholder.com/100x30?text=Logo3" class="h-6 inline-block" />
+            <img src="https://via.placeholder.com/100x30?text=Logo4" class="h-6 inline-block" />
+            <img src="https://via.placeholder.com/100x30?text=Logo5" class="h-6 inline-block" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Visionarios -->
+<section id="visionarios" class="px-6 py-24 md:py-32 text-center text-white max-w-4xl mx-auto bg-[#112d4e] rounded-xl">
+
+  <div class="inline-block text-xs font-semibold px-4 py-1 border border-white/20 rounded-full bg-white/5 mb-8">
+    🔍 ¿QUIENES SOMOS?
+  </div>
+
+  <h2 class="text-3xl md:text-4xl font-semibold leading-relaxed fade-in">
+    Somos una empresa mexicana fundada en 2005 que brinda servicios especializados en investigación de mercado<span class="font-bold"> ofreciendo una amplia gama de soluciones en modelos cuantitativos y cualitativo. </span><br />
+    —Los directivos tienen una trayectoria de más de 20 años.<br />
+    trabajando en Investigación de mercados en agencias de nivel internacional.<br />
+   
+  </h2>
+
+  <div class="mt-16 flex flex-col sm:flex-row justify-center gap-10 fade-in delay-1">
+    <div>
+      <div class="text-2xl mb-2">👑</div>
+      <p class="text-sm leading-snug">Bestselling<br />Expertise</p>
+    </div>
+    <div>
+      <div class="text-2xl mb-2">🌱</div>
+      <p class="text-sm leading-snug">Eco-Focused<br />Foundation</p>
+    </div>
+    <div>
+      <div class="text-2xl mb-2">🧠</div>
+      <p class="text-sm leading-snug">Human-Centered<br />Vision</p>
+    </div>
+  </div>
+</section>
+<!-- Sección Gráfica de Barras -->
+<section class="px-6 py-24 md:py-32 text-white bg-blue flex flex-col md:flex-row items-center justify-center gap-12">
+  
+  <!-- Texto -->
+  <div class="md:w-1/2 text-left max-w-md">
+    <h2 class="text-4xl font-bold leading-tight mb-6">
+      Your <span class="text-gradient">growth</span>,<br/>
+      Our <span class="text-gradient">priority!</span>
+    </h2>
+    <p class="text-gray-300 text-lg">
+      Our top priority is your growth and satisfaction, ensuring a seamless and engaging experience tailored to your needs.
+    </p>
+  </div>
+
+ 
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center justify-center text-white">
+    
+    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="0">
+      <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M16 7a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+     
+    </div>
+
+    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+      <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      
+    </div>
+
+    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+      <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8" />
+      </svg>
+    
+    </div>
+
+    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+      <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 8c-1.1 0-2 .9-2 2 0 .9.6 1.6 1.5 1.9L12 13v1m0 4h.01M20 12c0-4.418-3.582-8-8-8S4 7.582 4 12s3.582 8 8 8 8-3.582 8-8z" />
+      </svg>
+      
+    </div>
+
+    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
+      <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 6v6m0 0l3-3m-3 3l-3-3m6 9H6a2 2 0 01-2-2v-1a2 2 0 012-2h12a2 2 0 012 2v1a2 2 0 01-2 2z" />
+      </svg>
+      
+    </div>
+
+    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="500">
+      <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+      </svg>
+    
+    </div>
+
+  </div>
+
+  
+</section>
+
+  
+</section>
+ <!-- Sección: Cómo lo logramos (con partículas) -->
+<section class="relative px-6 py-24 md:py-32 text-white overflow-hidden bg-[#0b2545]">
+  <!-- Partículas de fondo -->
+  <div id="particles-how" class="absolute inset-0 -z-10"></div>
+
+  <div class="max-w-6xl mx-auto text-center relative z-10">
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 fade-in">¿Cómo lo logramos?</h2>
+
+    <div class="grid md:grid-cols-4 gap-8 fade-in delay-1">
+      
+      <!-- Estrategia -->
+      <div class="bg-[#1f2937] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+        <div class="text-3xl mb-4">📊</div>
+        <h3 class="text-xl font-semibold mb-2">Estrategia</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Diseñamos soluciones con base en objetivos reales y análisis profundo del entorno de cada cliente.
+        </p>
+      </div>
+
+      <!-- Tecnología -->
+      <div class="bg-[#1f2937] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+        <div class="text-3xl mb-4">⚙️</div>
+        <h3 class="text-xl font-semibold mb-2">Tecnología</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Integramos herramientas tecnológicas que potencian la eficiencia y permiten una mejor toma de decisiones.
+        </p>
+      </div>
+
+      <!-- Talento Humano -->
+      <div class="bg-[#1f2937] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+        <div class="text-3xl mb-4">👥</div>
+        <h3 class="text-xl font-semibold mb-2">Talento Humano</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Nuestro equipo está comprometido con la ética, la excelencia y el servicio cercano al cliente.
+        </p>
+      </div>
+
+      <!-- Resultados -->
+      <div class="bg-[#1f2937] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+        <div class="text-3xl mb-4">📈</div>
+        <h3 class="text-xl font-semibold mb-2">Resultados</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Entregamos resultados medibles, construyendo relaciones sólidas y de largo plazo con cada cliente.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
